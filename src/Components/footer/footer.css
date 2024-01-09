@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 1em;
+  background-color: rgb(159, 93, 5);
+  color: #fff;
+  padding: 3em;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 2rem;
+}
+.mm {
+  /* padding: 1rem 5rem; */
+}
+.footer-section .title {
+  opacity: 2;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.1em;
+}
+.footer-section p {
+  margin-bottom: 0.5em;
+}
+.footer-section .flink {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .mm {
+    padding-right: 0;
+  }
+}
