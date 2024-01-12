@@ -190,21 +190,9 @@ html {
   padding: 0.3rem 0.5rem;
 }
 
-.overlay-inner .description{
-  margin-top:2rem;
+.overlay-inner .description {
+  margin-top: 2rem;
   text-align: justify;
-  font-size:13px;
-  
+  font-size: 13px;
+  color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-

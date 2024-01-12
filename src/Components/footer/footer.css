@@ -1,11 +1,11 @@
 .footer {
-  width: 100%;
+  width: 150%;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-gap: 1em;
   background-color: rgb(159, 93, 5);
-  color: #fff;
-  padding: 3em;
+  color: #9f9999;
+  padding: 2rem 0rem 2rem 1rem;
   border-radius: 10px;
   text-align: center;
   margin-left: 2rem;
@@ -14,20 +14,26 @@
   /* padding: 1rem 5rem; */
 }
 .footer-section .title {
-  opacity: 2;
   font-weight: bold;
-  color: #fff;
+  color: #8d7d7d;
   font-size: 1.1em;
 }
 .footer-section p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
 }
 .footer-section .flink {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  font-size: 1.3rem;
 }
+
+.flink:hover {
+  opacity: 0.5;
+}
+
 @media (max-width: 768px) {
   .mm {
     padding-right: 0;

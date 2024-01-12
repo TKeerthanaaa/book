@@ -3,17 +3,32 @@ import Home from "./routes/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/footer/footer";
 import Book from "./routes/Book/book";
-import { Routes, Route } from "react-router-dom";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Login from "./page/login";
+import SignUp from "./page/SignUp";
+import Private from "./page/Private";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/book" element={<Book />} />
-      </Routes>
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route path="private/*" element={<Private />}>
+            {/* Use * to match any route under /private */}
+            <Route path="book" element={<Book />} />
+          </Route>
+
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
+        </Routes>
+
+        <Footer />
+      </Router>
     </>
   );
 };
