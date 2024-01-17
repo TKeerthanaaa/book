@@ -45,7 +45,7 @@ const Login = () => {
         setFormFields({ email: "", password: "", cpassword: "" });
         if (user) {
           setUser(user.email, user.username);
-          navigate("/recipe");
+          navigate("/book");
           console.log(user.email);
           console.log(user.username);
         }

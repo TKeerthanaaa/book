@@ -18,9 +18,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="private/*" element={<Private />}>
-            {/* Use * to match any route under /private */}
-            <Route path="book" element={<Book />} />
+          <Route path="" element={<Private />}>
+            <Route path="/book" element={<Book />} />
           </Route>
 
           <Route path="login" element={<Login />} />

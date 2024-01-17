@@ -7,7 +7,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
-// import { getFirestore } from "firebase/firestore/lite";
+  
 
 const firebaseConfig = {
   apiKey: "AIzaSyD3zBr1-Kg5EE-K8ZgVD0kWkt3X16-pP4g",

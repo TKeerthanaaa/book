@@ -1,14 +1,13 @@
 import "./style.css";
 import { Link } from "react-router-dom";
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
-  const handleSignOut = () => {
-    localStorage.removeItem("userEmail");
-    navigate("/");
-  };
+  // const navigate = useNavigate();
+  
+
+  
   return (
     <nav className="navbar">
       <div className="container h-[7rem] flex item-center justify-between">
@@ -29,9 +28,7 @@ const Navbar = () => {
           <Link to="/book">BOOK</Link>
         </li>
       </ul>
-      <button className="" onClick={handleSignOut}>
-        Logout
-      </button>
+      
     </nav>
   );
 };

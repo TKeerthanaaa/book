@@ -16,9 +16,10 @@
 width: 5rem;
 height: 5rem;
 margin-left: 2rem;
+border-radius: 50%;
 }
 
 .log-btn{
   margin-right: 5rem;
-
 }
+
