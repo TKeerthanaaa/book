@@ -27,7 +27,11 @@ const Home = () => {
         </div>
 
         <div className="image">
-          <img className="book-one" src="public\images\books-1.jpg" alt="" />
+          <img
+            className="book-one"
+            src="https://i.pinimg.com/originals/c8/b0/7e/c8b07e380215edaaa1903769586a61dc.jpg"
+            alt=""
+          />
           <h5 className="content">
             Everything has BEAUTY, but not everyone sees it.
           </h5>
