@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "../../Components/Main";
 import { useNavigate } from "react-router-dom";
-import "../book/book.css"
+import "../book/book.css";
 
 const Book = () => {
   const navigate = useNavigate();
